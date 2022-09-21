@@ -4,7 +4,6 @@ module.exports = {
         "appBundleId": "ItchySats",
         "icon": "logo.icns",
         "overwrite": true,
-        "appVersion": "0.6.1",
     },
     "makers": [
         {
@@ -16,16 +15,23 @@ module.exports = {
         {
             "name": "@electron-forge/maker-zip",
             "platforms": [
-                "darwin",
+                "linux",
             ],
         },
         {
-            "name": "@electron-forge/maker-deb",
-            "config": {},
+            "name": "@electron-forge/maker-dmg",
         },
+    ],
+    "publishers": [
         {
-            "name": "@electron-forge/maker-rpm",
-            "config": {},
+            "name": "@electron-forge/publisher-github",
+            "config": {
+                // todo: change to itchysats/itchysats
+                "repository": {
+                    "owner": "bonomat",
+                    "name": "hermes",
+                },
+            },
         },
     ],
 };
