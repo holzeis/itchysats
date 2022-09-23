@@ -52,7 +52,6 @@ export default class Main {
             width: 1250,
             height: 1000,
             title: "ItchySats",
-            icon: path.join(__dirname, "logo.icns"),
         });
         app.setName("ItchySats");
 

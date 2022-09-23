@@ -2,7 +2,7 @@ module.exports = {
     "packagerConfig": {
         "name": "ItchySats Desktop",
         "appBundleId": "ItchySats",
-        "icon": "logo.icns",
+        "icon": "images/icon",
         "overwrite": true,
     },
     "makers": [
@@ -10,6 +10,7 @@ module.exports = {
             "name": "@electron-forge/maker-squirrel",
             "config": {
                 "name": "taker_electron",
+                "setupIcon": "images/icon.ico"
             },
         },
         {
@@ -25,6 +26,7 @@ module.exports = {
                     "owner": "bonomat",
                     "name": "hermes",
                 },
+                "icon": "images/icon.icns"
             },
         },
     ],
