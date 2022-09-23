@@ -10,7 +10,7 @@ module.exports = {
             "name": "@electron-forge/maker-squirrel",
             "config": {
                 "name": "taker_electron",
-                "setupIcon": "images/icon.ico"
+                "setupIcon": "images/icon.ico",
             },
         },
         {
@@ -23,10 +23,10 @@ module.exports = {
             "config": {
                 // todo: change to itchysats/itchysats
                 "repository": {
-                    "owner": "bonomat",
-                    "name": "hermes",
+                    "owner": "holzeis",
+                    "name": "itchysats",
                 },
-                "icon": "images/icon.icns"
+                "icon": "images/icon.icns",
             },
         },
     ],
